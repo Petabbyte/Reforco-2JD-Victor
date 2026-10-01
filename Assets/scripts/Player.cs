@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public float dashforce = 10f;
     private Rigidbody2D rb;
     private bool isDashing = false;
-    private float dashDuration = 0f;
+    private float dashDuration = 2f;
 
     public float moveHorizontal;
 
@@ -67,7 +67,7 @@ public class Player : MonoBehaviour
 
 
         //Depois da duração, volta ao movimento normal
-         Invoke(nameof(PararDash), dashDuration);
+        // Invoke(nameof(PararDash), dashDuration);
 
     }
 
